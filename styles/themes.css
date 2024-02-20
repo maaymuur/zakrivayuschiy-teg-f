@@ -4,3 +4,52 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+
+.theme-dark{
+    --background-color: var(--background-color-scheme-dark);
+    --accent-color: var(--accent-color-scheme-dark);
+    --background-image: var(--background-image-dark);
+    --gradient: var(--gradient-dark);
+}
+
+:root.theme-dark{
+    --background-color: var(--background-color-scheme-dark);
+    --accent-color: var(--accent-color-scheme-dark);
+    --background-image: var(--background-image-dark);
+    --gradient: var(--gradient-dark);
+}
+
+
+@media (prefers-color-scheme: dark) {
+:root{
+    --background-color: var(--background-color-scheme-dark);
+    --accent-color: var(--accent-color-scheme-dark);
+    --background-image: var(--background-image-dark);
+    --gradient: var(--gradient-dark);
+}}
+
+
+
+
+
+.theme-light{
+    --background-color: var(--background-color-scheme);
+    --accent-color: var(--accent-color-scheme-light);
+    --background-image: var(--background-image-light)
+}
+
+:root.theme-light{
+    --background-color: var(--background-color-scheme);
+    --accent-color: var(--accent-color-scheme-light);
+    --background-image: var(--background-image-light)
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+      --background-color: var(--background-color-scheme);
+      --accent-color: var(--accent-color-scheme-light);
+      --background-image: var(--background-image-light)
+    }
+  }
+  

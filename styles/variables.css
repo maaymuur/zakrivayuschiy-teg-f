@@ -1,1 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root{
+    --accent-font: 'Press Start 2P';
+    --basic-font:'Inter-Variable';
+    --weight-main-text:400;
+    --weight-heading-text:700;
+
+
+    --background-color-scheme:rgb(255, 255, 255);
+    --accent-color-scheme-light:rgb(0, 0, 0);
+    --background-color-scheme-dark:rgb(0, 0, 0);
+    --accent-color-scheme-dark:rgb(0, 204, 20);
+    --favicon-dark-color:rgb(0, 204, 20);
+    --background-image-dark: url(../images/background-dark.png);
+    --background-image-light: url(../images/background-light.png);
+    --gradient-light:repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --gradient-dark:repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+
+      
+      
+
+    --gradient: var(--gradient-light);
+    --background-image: var(--background-image-light);
+    --background-color: var(--background-color-scheme);
+    --accent-color: var(--accent-color-scheme-light);
+
+}
+
