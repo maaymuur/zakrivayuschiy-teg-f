@@ -11,6 +11,11 @@
     --accent-color: var(--accent-color-scheme-dark);
     --background-image: var(--background-image-dark);
     --gradient: var(--gradient-dark);
+    --background-card: var(--background-cards-black);
+    --border-card:var(--border-card-green);
+    --color-invers:var(--color-inverse-green);
+    --layer-over-button: var(--layer-over-button-green);
+    --contour-color: var(--contour-heart-color-green);
 }
 
 :root.theme-dark{
@@ -18,6 +23,11 @@
     --accent-color: var(--accent-color-scheme-dark);
     --background-image: var(--background-image-dark);
     --gradient: var(--gradient-dark);
+    --background-card: var(--background-cards-black);
+    --border-card:var(--border-card-green);
+    --color-invers:var(--color-inverse-green);
+    --layer-over-button: var(--layer-over-button-green);
+    --contour-color: var(--contour-heart-color-green);
 }
 
 
@@ -27,7 +37,26 @@
     --accent-color: var(--accent-color-scheme-dark);
     --background-image: var(--background-image-dark);
     --gradient: var(--gradient-dark);
-}}
+    --background-card: var(--background-cards-black);
+    --border-card:var(--border-card-green);
+    --color-invers:var(--color-inverse-green);
+    --layer-over-button: var(--layer-over-button-green);
+    --contour-color: var(--contour-heart-color-green);
+}
+.theme-dark.button__text {
+    color: var(--color-invers);
+}
+
+.theme-dark.card__like-button::before {
+    background-color: var(--layer-over-button);
+  }
+
+  .card__save-button::before{
+    background-color: var(--layer-over-button);
+  }
+  
+  
+}
 
 
 
@@ -36,20 +65,28 @@
 .theme-light{
     --background-color: var(--background-color-scheme);
     --accent-color: var(--accent-color-scheme-light);
-    --background-image: var(--background-image-light)
+    --background-image: var(--background-image-light);
+    --button-text-white: var( --accent-color-span-white);
 }
 
 :root.theme-light{
     --background-color: var(--background-color-scheme);
     --accent-color: var(--accent-color-scheme-light);
-    --background-image: var(--background-image-light)
+    --background-image: var(--background-image-light);
+    --button-text-white: var( --accent-color-span-white);
 }
 
 @media (prefers-color-scheme: light) {
     :root{
       --background-color: var(--background-color-scheme);
       --accent-color: var(--accent-color-scheme-light);
-      --background-image: var(--background-image-light)
+      --background-image: var(--background-image-light);
+      --button-text-white: var( --accent-color-span-white);
     }
+
+    .theme-light.button__text{
+        color: var(--button-text-white);
+        mix-blend-mode: difference;
+      }
   }
   
