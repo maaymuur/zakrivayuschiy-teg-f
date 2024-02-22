@@ -450,10 +450,6 @@ dialog .card__save-button {
   display: block;
 }
 
-.floppy__box {
-  margin-top: 3px;
-}
-
 .put_diskette {
   display: grid;
   grid-template-columns: [start] 39px [line2] 234px;
@@ -515,6 +511,7 @@ dialog .card__save-button {
 .floppy__box {
   mix-blend-mode: difference;
   color: var(--color-invers);
+  margin-top: 3px;
 }
 
 .img {
@@ -553,7 +550,6 @@ dialog .card__save-button {
 
 .confidence {
   filter: grayscale(50%);
-  filter: brightness(2);
 }
 
 .card:hover:nth-child(odd) {
