@@ -46,7 +46,6 @@
     </header>
     <main class="main">
       <div class="cards">
-
         <section class="card">
           <h3 class="card_header">Фритрек и нулевой спринт: Подготовка к работе</h3>
           <div class="card_label">
@@ -86,8 +85,6 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-
-        
         <section class="card">
           <h3 class="card_header">Спринт 1.</h3>
           <div class="card_label">
@@ -126,7 +123,6 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-        
         <section class="card">
           <h3 class="card_header">Спринт 2 и 3</h3>
           <div class="card_label">
@@ -165,8 +161,6 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-
-        
         <section class="card">
           <h3 class="card_header">Первые победы</h3>
           <div class="card_label">
@@ -206,12 +200,11 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-        
         <section class="card">
           <h3 class="card_header">Расслабленность при кодинге</h3>
           <div class="card_label">
             <h4 class="header_S">&lt;РЕЛАКС&gt;</h4>
-          <img class="img" src="./images/sleep.jpg" alt="Минивэн едет в лесу">
+          <img class="img sleep" src="./images/sleep.jpg" alt="Минивэн едет в лесу">
         </div>
           <p class="card_text">Дымок...пошел по комнате дымок...</p>
             <span class="card_text_additional">Я знаю, что в этом проекте у меня тоже будут замечания. Но эта работа - моя таблетка дофамина. 
@@ -245,13 +238,11 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-
-        
         <section class="card">
           <h3 class="card_header">Я заглянула в статьи по шаблонизаторам</h3>
           <div class="card_label">
             <h4 class="header_S">&lt;СНОВА СТРЕСС&gt;</h4>
-          <img class="img" src="./images/anxious.jpg" alt="Минивэн едет в лесу">
+          <img class="img anxious" src="./images/anxious.jpg" alt="Минивэн едет в лесу">
         </div>
           <p class="card_text">Земную жизнь пройдя наполовину...</p>
             <span class="card_text_additional">В розовом мире CSS и HTML я совсем забыла о существовании JS и REACTJS...Я на самом деле переживаю,
@@ -286,13 +277,11 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-
-        
         <section class="card">
           <h3 class="card_header">Хочу, чтоб в моей жизни главной проблемой было только то, как назвать перменную</h3>
           <div class="card_label">
             <h4 class="header_S">&lt;УВЕРЕННОСТЬ В КОДИНГЕ&gt;</h4>
-          <img class="img" src="./images/confidence.jpg" alt="Минивэн едет в лесу">
+          <img class="img confidence" src="./images/confidence.jpg" alt="Минивэн едет в лесу">
         </div>
           <p class="card_text">!false - такой ли ты false, каким притворяешься...</p>
             <span class="card_text_additional">Смотрю я иногда на крутых программистов, и мечтаю также пафосно сидеть за компьютером, смотреть
@@ -327,8 +316,6 @@
           <button class="card__like-button"><span class="button__text">Like</span></button>
         </div>
         </section>
-
-        
         <section class="card">
           <h3 class="card_header">Я понимаю вашу усталость от проверок работ, надеюсь, вас улыбнули картинки.</h3>
           <div class="card_label">
@@ -365,7 +352,6 @@
         </div>
         </section>
       </div>
-
     <div class="save">
       <button class="card__save-button " type="button" 
       onclick="window['dialog_modal'].showModal()" 
@@ -373,19 +359,10 @@
         <svg class="floppy__box"  viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-
         <span class="button__text"> 
         Сохранить на память</span>
       </button>
-
-
-
-
-
-
-
       <dialog id="dialog_modal">
-        
       <div class="put_diskette">
         <svg class="floppy__box" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy"></use>
@@ -393,17 +370,10 @@
         <span class="button__text"> 
         Вставьте дискетту, чтобы продолжить</span>
       </div>
-
-      <button type="button" onclick="window['dialog_modal'].close()" class="card__save-button button_text_ok">
+      <button type="button" onclick=" window['dialog_modal'].close()" class="card__save-button button_text_ok">
         <span class="button__text "> ok </span>
       </button>
     </dialog> 
-
-
-
-
-
-
     </div>
     </main>
     <script src="./scripts/like.js"></script>

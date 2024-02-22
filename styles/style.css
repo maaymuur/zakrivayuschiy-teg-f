@@ -29,7 +29,11 @@ body {
   background-image: var(--gradient);
   background-size: cover;
   display: grid;
-  grid-template-columns: [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem) [line3] auto;
+  grid-template-columns: [start] auto [line2]clamp(
+      23.4375rem,
+      16.2852rem + 30.5164vw,
+      43.75rem
+    ) [line3] auto;
   grid-template-rows: [start] 100px [line1]auto [line2] auto;
 }
 
@@ -67,7 +71,7 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  margin-block-end:15px;
+  margin-block-end: 15px;
 }
 
 .theme-menu__item:nth-child(1) {
@@ -182,8 +186,6 @@ body {
   position: relative;
 }
 
-
-
 .header_S {
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -248,12 +250,10 @@ body {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-
 .button__text {
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   font-size: 14px;
   position: relative;
-  font-size: 14px;
   mix-blend-mode: difference;
   color: var(--color-invers);
   margin-block-end: 8px;
@@ -383,8 +383,7 @@ body {
   animation-duration: 0.3s;
 }
 
-
-.card__icon-button:active .core{
+.card__icon-button:active .core {
   fill: red;
   transition: fill 0.05s;
   animation-duration: 0.3s;
@@ -396,28 +395,25 @@ body {
   animation-duration: 0.3s;
 }
 
-
-.like-icon.is-liked .contour{
+.like-icon.is-liked .contour {
   fill: red;
   transition: fill 0.3s 0.06s linear;
   animation-duration: 0.3s;
 }
 
-.like-icon.is-liked  .main-body {
+.like-icon.is-liked .main-body {
   fill: red;
   transition: fill 0.3s 0.05s linear;
   animation-duration: 0.3s;
 }
 
-.like-icon.is-liked  .core {
+.like-icon.is-liked .core {
   fill: red;
   transition: fill 0.3s 0.05s linear;
   animation-duration: 0.3s;
 }
 
-
-
-.like-icon.is-liked  .heart{
+.like-icon.is-liked .heart {
   animation: heart-like alternate;
   animation-delay: 0.1s;
   animation-duration: 0.3s;
@@ -426,47 +422,42 @@ body {
 }
 
 @keyframes heart-like {
-  from{
+  from {
     transform: scale(1);
   }
-  to{
+  to {
     transform: scale(1.5);
   }
 }
 
-
-.like-icon.is-liked  .sparks{
+.like-icon.is-liked .sparks {
   opacity: 1;
   animation-duration: 0.3s;
   animation: sparkles alternate;
   animation-delay: 0.3s;
   animation-timing-function: ease-in;
-
 }
 
 @keyframes sparkles {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.7);
-} 
+}
 
-
-
-dialog{
+dialog {
   background-color: var(--background-card);
   color: var(--accent-color);
   padding: 0;
 }
 
 dialog .card__save-button {
-  margin: 0 0;
   min-width: 293px;
   text-align: center;
   text-transform: uppercase;
@@ -474,12 +465,12 @@ dialog .card__save-button {
   display: block;
 }
 
-.floppy__box{
+.floppy__box {
   display: flex;
   justify-content: center;
 }
 
-.put_diskette{
+.put_diskette {
   display: grid;
   grid-template-columns: [start] 39px [line2] 234px;
   justify-content: center;
@@ -488,9 +479,7 @@ dialog .card__save-button {
   column-gap: 20px;
 }
 
-
-
-.save{
+.save {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,18 +487,18 @@ dialog .card__save-button {
   margin-bottom: 100px;
 }
 
-.card__save-button:hover{
-cursor: pointer;
-background-color: var(--background-card);
-color: var(--accent-color);
-}
-
-.card__save-button:enabled{
+.card__save-button:hover {
+  cursor: pointer;
   background-color: var(--background-card);
   color: var(--accent-color);
-  }
+}
 
-.card__save-button::before{
+.card__save-button:enabled {
+  background-color: var(--background-card);
+  color: var(--accent-color);
+}
+
+.card__save-button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -523,22 +512,22 @@ color: var(--accent-color);
   z-index: 0;
 }
 
-.card__save-button:hover::before{
+.card__save-button:hover::before {
   transform: scaleX(1);
 }
 
-.card__save-button{
+.card__save-button {
   display: grid;
   grid-template-columns: [start] 21px [line2] auto;
   column-gap: 25px;
 }
 
-.floppy__box{
+.floppy__box {
   mix-blend-mode: difference;
   color: var(--color-invers);
 }
 
-.img{
+.img {
   width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   display: flex;
@@ -548,37 +537,52 @@ color: var(--accent-color);
   border-top: 2px solid var(--accent-color);
 }
 
-.stress{
+.stress {
   filter: saturate(1.5);
 }
 
-.angry{
+.angry {
   filter: sepia(0.5);
 }
 
-.desperate{
-  filter:blur(0.5px);
+.desperate {
+  filter: blur(0.5px);
 }
 
-.win{
+.win {
   filter: contrast(130%);
 }
 
+.sleep {
+  filter: opacity(90%);
+}
 
-.card:hover:nth-child(odd){
+.anxious {
+  filter: hue-rotate(30deg);
+}
+
+.confidence {
+  filter: grayscale(50%);
+}
+
+.card:hover:nth-child(odd) {
   transform: translateX(10px) rotate(10deg) translateY(5px);
 }
 
-.card:hover:nth-child(even){
+.card:hover:nth-child(even) {
   transform: translateX(-10px) rotate(-10deg) translateY(-5px);
 }
 
-@media (width > 375px){
-.header {
+@media (width > 375px) {
+  .header {
     width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-}
+  }
 
-.body{
-  grid-template-columns: [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem) [line3] auto;
-}
+  .body {
+    grid-template-columns: [start] auto [line2]clamp(
+        23.4375rem,
+        16.2852rem + 30.5164vw,
+        43.75rem
+      ) [line3] auto;
+  }
 }

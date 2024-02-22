@@ -1,52 +1,71 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
-:root{
-    --accent-font: 'Press Start 2P';
-    --basic-font:'Inter-Variable';
-    --weight-main-text:400;
-    --weight-heading-text:700;
+:root {
+  --accent-font: "Press Start 2P";
+  --basic-font: "Inter-Variable";
+  --weight-main-text: 400;
+  --weight-heading-text: 700;
 
-
-    --background-color-scheme:rgb(255, 255, 255);
-    --accent-color-scheme-light:rgb(0, 0, 0);
-    --background-color-scheme-dark:rgb(0, 0, 0);
-    --accent-color-scheme-dark:rgb(0, 204, 20);
-    --favicon-dark-color:rgb(0, 204, 20);
-    --background-image-dark: url(../images/background-dark.png);
-    --background-image-light: url(../images/background-light.png);
-    --gradient-light:repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  --background-color-scheme: rgb(255, 255, 255);
+  --accent-color-scheme-light: rgb(0, 0, 0);
+  --background-color-scheme-dark: rgb(0, 0, 0);
+  --accent-color-scheme-dark: rgb(0, 204, 20);
+  --favicon-dark-color: rgb(0, 204, 20);
+  --background-image-dark: url(../images/background-dark.png);
+  --background-image-light: url(../images/background-light.png);
+  --gradient-light: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-    --gradient-dark:repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  --gradient-dark: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     linear-gradient(to bottom, #007f0c, #004306);
-    --accent-color-span-white: rgb(255, 255, 255);
-    --contour-heart-color-black:#000;
-    --contour-heart-color-green:rgb(0, 204, 20);
-    --sparkles-red:red;
-    --background-cards-white:rgb(255, 255, 255);
-    --background-cards-black:rgb(0, 0, 0);
-    --border-card-black:rgb(0, 0, 0);
-    --border-card-green:rgb(0, 204, 20);
-    --color-inverse-white:rgb(255, 255, 255);
-    --color-inverse-green:rgb(0, 204, 20);
-    --layer-over-button-black:rgb(0, 0, 0);
-    --layer-over-button-green:rgb(0, 204, 20);
+  --accent-color-span-white: rgb(255, 255, 255);
+  --contour-heart-color-black: #000;
+  --contour-heart-color-green: rgb(0, 204, 20);
+  --sparkles-red: red;
+  --background-cards-white: rgb(255, 255, 255);
+  --background-cards-black: rgb(0, 0, 0);
+  --border-card-black: rgb(0, 0, 0);
+  --border-card-green: rgb(0, 204, 20);
+  --color-inverse-white: rgb(255, 255, 255);
+  --color-inverse-green: rgb(0, 204, 20);
+  --layer-over-button-black: rgb(0, 0, 0);
+  --layer-over-button-green: rgb(0, 204, 20);
 
-
-       
-    --contour-color: var(--contour-heart-color-black);
-    --layer-over-button: var(--layer-over-button-black);
-    --color-invers:var(--color-inverse-white);
-    --border-card:var(--border-card-black);
-    --background-card: var(--background-cards-white);
-    --sparkles:var(--sparkles-red);
-    --contour-heart:var(--contour-heart-color-black);
-    --button-text-white: var( --accent-color-span-white);
-    --gradient: var(--gradient-light);
-    --background-image: var(--background-image-light);
-    --background-color: var(--background-color-scheme);
-    --accent-color: var(--accent-color-scheme-light);
-
+  --contour-color: var(--contour-heart-color-black);
+  --layer-over-button: var(--layer-over-button-black);
+  --color-invers: var(--color-inverse-white);
+  --border-card: var(--border-card-black);
+  --background-card: var(--background-cards-white);
+  --sparkles: var(--sparkles-red);
+  --contour-heart: var(--contour-heart-color-black);
+  --button-text-white: var(--accent-color-span-white);
+  --gradient: var(--gradient-light);
+  --background-image: var(--background-image-light);
+  --background-color: var(--background-color-scheme);
+  --accent-color: var(--accent-color-scheme-light);
 }
-
