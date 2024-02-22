@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--basic-font);
-  font-variation-settings: var(--basic-font);
+  font-variation-settings: "wght" var(--basic-font);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--background-image);
@@ -29,11 +29,9 @@ body {
   background-image: var(--gradient);
   background-size: cover;
   display: grid;
-  grid-template-columns: [start] auto [line2]clamp(
-      23.4375rem,
-      16.2852rem + 30.5164vw,
-      43.75rem
-    ) [line3] auto;
+  grid-template-columns:
+    [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
+    [line3] auto;
   grid-template-rows: [start] 100px [line1]auto [line2] auto;
 }
 
@@ -338,19 +336,6 @@ body {
   margin: 0 auto;
 }
 
-.card__save-button {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  align-items: center;
-  padding-inline: 18px;
-  padding-block: 8px;
-  margin: 0 auto;
-  font-size: 14px;
-  border: 2px solid var(--accent-color);
-}
-
 .sparks {
   opacity: 0;
 }
@@ -466,8 +451,7 @@ dialog .card__save-button {
 }
 
 .floppy__box {
-  display: flex;
-  justify-content: center;
+  margin-top: 3px;
 }
 
 .put_diskette {
@@ -477,6 +461,18 @@ dialog .card__save-button {
   align-items: center;
   margin-top: 30px;
   column-gap: 20px;
+}
+
+.card__save-button {
+  display: grid;
+  grid-template-columns: [start] 21px [line2] auto;
+  column-gap: 20px;
+  padding-inline: 18px;
+  padding-block: 8px;
+  margin: 0 auto;
+  font-size: 14px;
+  border: 2px solid var(--accent-color);
+  position: relative;
 }
 
 .save {
@@ -495,7 +491,7 @@ dialog .card__save-button {
 
 .card__save-button:enabled {
   background-color: var(--background-card);
-  color: var(--accent-color);
+  color: var(--color-invers);
 }
 
 .card__save-button::before {
@@ -514,12 +510,6 @@ dialog .card__save-button {
 
 .card__save-button:hover::before {
   transform: scaleX(1);
-}
-
-.card__save-button {
-  display: grid;
-  grid-template-columns: [start] 21px [line2] auto;
-  column-gap: 25px;
 }
 
 .floppy__box {
@@ -563,6 +553,7 @@ dialog .card__save-button {
 
 .confidence {
   filter: grayscale(50%);
+  filter: brightness(2);
 }
 
 .card:hover:nth-child(odd) {
@@ -579,10 +570,18 @@ dialog .card__save-button {
   }
 
   .body {
-    grid-template-columns: [start] auto [line2]clamp(
-        23.4375rem,
-        16.2852rem + 30.5164vw,
-        43.75rem
-      ) [line3] auto;
+    grid-template-columns:
+      [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
+      [line3] auto;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-variation-settings: "wght" 400;
+  }
+
+  .card__title {
+    font-variation-settings: "wght" 700;
   }
 }
