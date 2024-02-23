@@ -12,3 +12,154 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+
+*/
+
+.theme-menu__button:disabled {
+  animation-timing-function: ease;
+}
+
+.theme-menu__button:disabled::before {
+  animation: arrow 0.5s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow {
+  0% {
+    margin-inline-start: -19px;
+  }
+  100% {
+    margin-inline-start: -23px;
+  }
+}
+
+.theme-menu__button::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scale(1);
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.card__like-button {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card__like-button::before {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transform: scaleX(1);
+}
+
+.card__like-button:focus-visible {
+  transition: box-shadow 0.3s;
+  transition-timing-function: ease;
+}
+
+.like-icon .core {
+  transition: fill 0.3s;
+  animation-duration: 0.3s;
+}
+
+.like-icon :hover .core {
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon :hover .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s;
+}
+
+.card__icon-button:active .core {
+  transition: fill 0.05s;
+}
+
+.like-icon :active .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s 0.06s linear;
+}
+.like-icon :active .contour {
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-like alternate;
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+}
+
+@keyframes heart-like {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-animation 0.3s ease-in 1 alternate backwards;
+}
+
+@keyframes sparks-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card__save-button::before {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__save-button:hover::before {
+  transform: scaleX(1);
+}
+
+.img:hover {
+  transform: translateX(10px) rotate(10deg) translateY(5px);
+}

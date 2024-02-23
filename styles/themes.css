@@ -5,67 +5,30 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.theme-dark {
-  --background-color: var(--background-color-scheme-dark);
-  --accent-color: var(--accent-color-scheme-dark);
-  --background-image: var(--background-image-dark);
-  --gradient: var(--gradient-dark);
-  --background-card: var(--background-cards-black);
-  --border-card: var(--border-card-green);
-  --color-invers: var(--color-inverse-green);
-  --layer-over-button: var(--layer-over-button-green);
-  --contour-color: var(--contour-heart-color-green);
-}
-
 :root.theme-dark {
   --background-color: var(--background-color-scheme-dark);
   --accent-color: var(--accent-color-scheme-dark);
-  --background-image: var(--background-image-dark);
   --gradient: var(--gradient-dark);
   --background-card: var(--background-cards-black);
   --border-card: var(--border-card-green);
   --color-invers: var(--color-inverse-green);
   --layer-over-button: var(--layer-over-button-green);
   --contour-color: var(--contour-heart-color-green);
+  --background-image: var(--background-image-dark);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--background-color-scheme-dark);
     --accent-color: var(--accent-color-scheme-dark);
-    --background-image: var(--background-image-dark);
     --gradient: var(--gradient-dark);
     --background-card: var(--background-cards-black);
     --border-card: var(--border-card-green);
     --color-invers: var(--color-inverse-green);
     --layer-over-button: var(--layer-over-button-green);
     --contour-color: var(--contour-heart-color-green);
+    --background-image: var(--background-image-dark);
   }
-  .theme-dark.button__text {
-    color: var(--color-invers);
-  }
-
-  .theme-dark.card__like-button::before {
-    background-color: var(--layer-over-button);
-  }
-
-  .card__save-button::before {
-    background-color: var(--layer-over-button);
-  }
-}
-
-.theme-light {
-  --background-color: var(--background-color-scheme);
-  --accent-color: var(--accent-color-scheme-light);
-  --background-image: var(--background-image-light);
-  --button-text-white: var(--accent-color-span-white);
-
-  --gradient: var(--gradient-dark);
-  --background-card: var(--background-cards-white);
-  --border-card: var(--border-card-black);
-  --color-invers: var(--color-inverse-white);
-  --layer-over-button: var(--layer-over-button-black);
-  --contour-color: var(--contour-heart-color-black);
 }
 
 :root.theme-light {
@@ -93,18 +56,5 @@
     --color-invers: var(--color-inverse-white);
     --layer-over-button: var(--layer-over-button-black);
     --contour-color: var(--contour-heart-color-black);
-  }
-
-  .theme-light.button__text {
-    color: var(--button-text-white);
-    mix-blend-mode: difference;
-  }
-
-  .theme-dark.card__like-button::before {
-    background-color: var(--layer-over-button);
-  }
-
-  .card__save-button::before {
-    background-color: var(--layer-over-button);
   }
 }

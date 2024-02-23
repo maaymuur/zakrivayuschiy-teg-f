@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link
       type="image/svg+xml"
       href="./svg/favicon.svg"
@@ -21,9 +24,11 @@
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header_logo">
+        <a class="link_logo" href="#"> &lt;/HTML&gt;</a>
+      </h1>
+      <h1 class="header_name">ЗАКРЫВАЮЩИЙ ТЕГ</h1>
       <nav class="theme-menu header__theme-menu">
-        <h1 class="header_Xl">&lt;/HTML&gt;</h1>
-        <h2 class="header_M">ЗАКРЫВАЮЩИЙ ТЕГ</h2>
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -51,14 +56,14 @@
     </header>
     <main class="main">
       <div class="cards">
-        <section class="card">
-          <h3 class="card_header">
+        <section class="article">
+          <h2 class="card_header">
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
+          </h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;/СТРЕСС&gt;</h4>
+            <span class="header_watermark">&lt;/СТРЕСС&gt;</span>
             <img
-              class="img stress"
+              class="img filter-saturate"
               src="./images/stress.jpg"
               alt="Минивэн едет в лесу"
             />
@@ -68,8 +73,8 @@
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <span class="card_text_additional"
-            >Начало обучения я встретила в стрессе, так как параллельно у меня
+          <p class="card_text">
+            Начало обучения я встретила в стрессе, так как параллельно у меня
             была работа и еще одно обучение по сайнд-дизайну. Я уже планинровала
             заводить календарик недосыпа. Меня пытались отговорить, так как
             такой график казался авантюрой, однако я очень сильно хотела
@@ -77,9 +82,9 @@
             направление, я поняла, что это еще одна деятельность, которая
             откликается у меня очень сильно. Поэтому мне не хотелось терять
             время на раздумья.
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -123,31 +128,31 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">Спринт 1.</h3>
+        <section class="article">
+          <h2 class="card_header">Спринт 1.</h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;ЗЛОСТЬ&gt;</h4>
+            <span class="header_watermark">&lt;ЗЛОСТЬ&gt;</span>
             <img
-              class="img angry"
+              class="img filter-sepia"
               src="./images/angry.jpg"
               alt="Минивэн едет в лесу"
             />
           </div>
           <p class="card_text">Дурколет</p>
-          <span class="card_text_additional"
-            >В первом спринте я прошла опыт от злости и обиды на весь мир за то,
+          <p class="card_text">
+            В первом спринте я прошла опыт от злости и обиды на весь мир за то,
             что у меня не принимают работу, до принятия реальности такой, какая
             она есть. И это сильно помог мне в следующих спринтах. На данном
             этапе обучения я еще держалась бодро и вроде даже успевала по
             графику.
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -191,33 +196,33 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">Спринт 2 и 3</h3>
+        <section class="article">
+          <h2 class="card_header">Спринт 2 и 3</h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;ОТЧАЯНИЕ&gt;</h4>
+            <span class="header_watermark">&lt;ОТЧАЯНИЕ&gt;</span>
             <img
-              class="img desperate"
+              class="img filter-blur"
               src="./images/desperate.jpg"
               alt="Минивэн едет в лесу"
             />
           </div>
           <p class="card_text">Я все исправлю...починю...и налажу...</p>
-          <span class="card_text_additional"
-            >Здесь я впервые познакомилась с пропуском дедлайна и бессоной ночью
+          <p class="card_text">
+            Здесь я впервые познакомилась с пропуском дедлайна и бессоной ночью
             в попытке исправить увеличивающиеся комментарии ревьюера. Да, скажу
             честно, было пролито немало слез, так как чаще всего, я делаю ошибки
             из-за невнимательности и могу в упор бесконечно долго их не видеть.
             Я чувствовала себя жутко глупой, когда видела, как все уже впереди
             планеты, а я до сих пор не понимаю, чем absolute от relative
             отличается.
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -261,35 +266,34 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">Первые победы</h3>
+        <section class="article">
+          <h2 class="card_header">Первые победы</h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;ПОБЕДА&gt;</h4>
+            <span class="header_watermark">&lt;ПОБЕДА&gt;</span>
             <img
-              class="img win"
+              class="img filter-contrast"
               src="./images/win.jpg"
               alt="Минивэн едет в лесу"
             />
           </div>
           <p class="card_text">Надо радоваться, не надо напрягаться...</p>
-          <span class="card_text_additional"
-            >Нет более приятного ощущения, чем то, когда ты буквально за 10
-            минут сделал всю разметку сайта правильно, а если еще и адаптив
-            быстро сделал, да еще и сам метко подключил все файлы к корневому. В
-            общем где-то на 3 спринте я поняла, что уже могу спокойно себя
-            чувствовтаь перед чистым листом. Да, 3 проект дался мне кровью и
-            потом, но только потому что в целом в дне у меня оставалось очень
-            мало времени на кодинг, задерживаться после дд не хотелось. Я
-            спешила, делала кучу ошибок и сдала работу только на последней
-            итерации.
-          </span>
+          <p class="card_text">
+            Нет более приятного ощущения, чем то, когда ты буквально за 10 минут
+            сделал всю разметку сайта правильно, а если еще и адаптив быстро
+            сделал, да еще и сам метко подключил все файлы к корневому. В общем
+            где-то на 3 спринте я поняла, что уже могу спокойно себя чувствовтаь
+            перед чистым листом. Да, 3 проект дался мне кровью и потом, но
+            только потому что в целом в дне у меня оставалось очень мало времени
+            на кодинг, задерживаться после дд не хотелось. Я спешила, делала
+            кучу ошибок и сдала работу только на последней итерации.
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -333,31 +337,31 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">Расслабленность при кодинге</h3>
+        <section class="article">
+          <h2 class="card_header">Расслабленность при кодинге</h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;РЕЛАКС&gt;</h4>
+            <span class="header_watermark">&lt;РЕЛАКС&gt;</span>
             <img
-              class="img sleep"
+              class="img filter-opacity"
               src="./images/sleep.jpg"
               alt="Минивэн едет в лесу"
             />
           </div>
           <p class="card_text">Дымок...пошел по комнате дымок...</p>
-          <span class="card_text_additional"
-            >Я знаю, что в этом проекте у меня тоже будут замечания. Но эта
+          <p class="card_text">
+            Я знаю, что в этом проекте у меня тоже будут замечания. Но эта
             работа - моя таблетка дофамина. Когда я писала этот сайт, я делала
             это с невероятной уверенностью, будто четко знаю, что делать и как.
             Плюс непонятные моменты стали даваться гораздо легче, уже проще
             соображаю, что и где может быть не так. В общем, круть!
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -401,33 +405,33 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">Я заглянула в статьи по шаблонизаторам</h3>
+        <section class="article">
+          <h2 class="card_header">Я заглянула в статьи по шаблонизаторам</h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;СНОВА СТРЕСС&gt;</h4>
+            <span class="header_watermark">&lt;СНОВА СТРЕСС&gt;</span>
             <img
-              class="img anxious"
+              class="img filter-hue-rotate"
               src="./images/anxious.jpg"
               alt="Минивэн едет в лесу"
             />
           </div>
           <p class="card_text">Земную жизнь пройдя наполовину...</p>
-          <span class="card_text_additional"
-            >В розовом мире CSS и HTML я совсем забыла о существовании JS и
+          <p class="card_text">
+            В розовом мире CSS и HTML я совсем забыла о существовании JS и
             REACTJS...Я на самом деле переживаю, ведь в моем опыте был и python
             и java, и это было очень больно в изучении...Надеюсь, мне не
             прийдется спорить на повышенных тонах с компьютером в 2 часа ночи,
             как это было при изучении других языков. Пусть мир JS мне только
             показался жестоким и черствым, надеюсь, он будет хотя бы смешным и
             абсурдным...
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -471,20 +475,20 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">
+        <section class="article">
+          <h2 class="card_header">
             Хочу, чтоб в моей жизни главной проблемой было только то, как
             назвать перменную
-          </h3>
+          </h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;УВЕРЕННОСТЬ В КОДИНГЕ&gt;</h4>
+            <span class="header_watermark">&lt;УВЕРЕННОСТЬ В КОДИНГЕ&gt;</span>
             <img
-              class="img confidence"
+              class="img filter-grayscale"
               src="./images/confidence.jpg"
               alt="Минивэн едет в лесу"
             />
@@ -492,17 +496,17 @@
           <p class="card_text">
             !false - такой ли ты false, каким притворяешься...
           </p>
-          <span class="card_text_additional"
-            >Смотрю я иногда на крутых программистов, и мечтаю также пафосно
+          <p class="card_text">
+            Смотрю я иногда на крутых программистов, и мечтаю также пафосно
             сидеть за компьютером, смотреть на непонятные (понятные мне)
             строчки, напрягать лицо и смеяться над мемами про джунов. Конечно,
             есть еще много чего, что бы мне хотелось достичь кроме
             программирования. Но я уже чувствую, что вот-вот смогу поставить
             галочку возле одной из целей и со спокойной душой смеяться над
             шуткой "!false", ведь я шарю.
-          </span>
+          </p>
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -546,18 +550,18 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </section>
-        <section class="card">
-          <h3 class="card_header">
+        <section class="article">
+          <h2 class="card_header">
             Я понимаю вашу усталость от проверок работ, надеюсь, вас улыбнули
             картинки.
-          </h3>
+          </h2>
           <div class="card_label">
-            <h4 class="header_S">&lt;ПРОСТО МЕМ&gt;</h4>
+            <span class="header_watermark">&lt;ПРОСТО МЕМ&gt;</span>
             <img
               class="img"
               src="./images/good.jpg"
@@ -565,11 +569,11 @@
             />
           </div>
           <p class="card_text"></p>
-          <span class="card_text_additional"
-            >Здесь просто смешная картинка!</span
+          <p class="card_text"
+            >Здесь просто смешная картинка!</p
           >
           <div class="like">
-            <button class="card__icon-button is-liked">
+            <button type="button" class="card__icon-button is-liked">
               <svg
                 class="like-icon"
                 width="39"
@@ -613,7 +617,7 @@
                 ></path>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -636,9 +640,7 @@
             <svg class="floppy__box" viewBox="0 0 21 21">
               <use href="./svg/floppy.svg#floppy"></use>
             </svg>
-            <span class="button__text">
-              Вставьте дискетту, чтобы продолжить</span
-            >
+            <p class="button__text">Вставьте дискетту, чтобы продолжить</p>
           </div>
           <button
             type="button"

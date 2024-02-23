@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --accent-font: "Press Start 2P";
+  --accent-font: "PressStart2P";
   --basic-font: "Inter-Variable";
   --weight-main-text: 400;
   --weight-heading-text: 700;
@@ -11,38 +11,8 @@
   --background-color-scheme-dark: rgb(0, 0, 0);
   --accent-color-scheme-dark: rgb(0, 204, 20);
   --favicon-dark-color: rgb(0, 204, 20);
-  --background-image-dark: url(../images/background-dark.png);
-  --background-image-light: url(../images/background-light.png);
-  --gradient-light: repeating-linear-gradient(
-      to right,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  --gradient-dark: repeating-linear-gradient(
-      to right,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #007f0c, #004306);
+  --background-image-light: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 4px), repeating-linear-gradient(180deg, #d3d3d3, #d3d3d3 2px, transparent 4px), linear-gradient(#e7e7e7, #1a1a1a);
+  --background-image-dark: repeating-linear-gradient(90deg, #000, #000 2px, transparent 4px), repeating-linear-gradient(180deg, #000, #000 2px, transparent 4px), linear-gradient(#007f0c, #004306);;
   --accent-color-span-white: rgb(255, 255, 255);
   --contour-heart-color-black: #000;
   --contour-heart-color-green: rgb(0, 204, 20);
@@ -55,7 +25,11 @@
   --color-inverse-green: rgb(0, 204, 20);
   --layer-over-button-black: rgb(0, 0, 0);
   --layer-over-button-green: rgb(0, 204, 20);
+  --font-settings-L: 700;
+  --font-settings-M: 400;
 
+  --font-settings-big: var(--font-settings-L);
+  --font-settings-medium: var(--font-settings-M);
   --contour-color: var(--contour-heart-color-black);
   --layer-over-button: var(--layer-over-button-black);
   --color-invers: var(--color-inverse-white);
