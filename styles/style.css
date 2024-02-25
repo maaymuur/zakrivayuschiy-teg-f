@@ -149,7 +149,6 @@ body {
   row-gap: 52px;
 }
 
-
 .article {
   display: grid;
   grid-template-columns: repeat(1, auto);
@@ -189,7 +188,7 @@ body {
   margin-right: 25px;
 }
 
-.article:nth-child(7) .like{
+.article:nth-child(7) .like {
   padding-top: 42px;
 }
 
@@ -228,7 +227,7 @@ body {
   margin-block-start: 8px;
 }
 
-dialog .button__text{
+dialog .button__text {
   padding: 2.5px;
 }
 
@@ -342,7 +341,7 @@ dialog {
   background-color: var(--background-card);
   color: var(--accent-color);
   padding: 0;
-  width:clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem) ;
+  width: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
 }
 
 dialog .card__save-button {
@@ -465,21 +464,21 @@ dialog .card__save-button {
     grid-template-columns:
       [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
       [line3] auto;
-      grid-template-rows: [start] 95px [line1]auto [line2] auto;
+    grid-template-rows: [start] 95px [line1]auto [line2] auto;
   }
 
   .put_diskette {
     grid-template-columns: [ start] 39px [ line2] 198px;
   }
 
-  .card__save-button{
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: [start] 30px  [line1] 14px;
+  .card__save-button {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: [start] 30px [line1] 14px;
     padding-block: 20px;
     padding-top: 15px;
   }
 
-  .button_text_ok{
+  .button_text_ok {
     padding: 9px;
   }
   .header_logo {
@@ -494,62 +493,60 @@ dialog .card__save-button {
     row-gap: 52px;
   }
 
-  .article:nth-child(2) .like{
+  .article:nth-child(2) .like {
     padding-top: 40px;
   }
 
-  .article:nth-child(4) .like{
+  .article:nth-child(4) .like {
     padding-top: 0px;
     margin-top: 19px;
   }
 
-  .article:nth-child(5) .like{
+  .article:nth-child(5) .like {
     padding-top: 0px;
     margin-top: 35px;
   }
 
-  .article:nth-child(6) .like{
+  .article:nth-child(6) .like {
     padding-top: 0px;
     margin-top: 43px;
   }
 
-
-  .article:nth-child(7) .like{
+  .article:nth-child(7) .like {
     padding-top: 0px;
     margin-top: 81px;
   }
 
-  
-  .article:nth-child(8) .like{
+  .article:nth-child(8) .like {
     padding-top: 0px;
     margin-top: 34px;
   }
 
-  .like{
+  .like {
     margin-right: 29px;
   }
 
-  .card__icon-button{
+  .card__icon-button {
     padding: 0px;
   }
 
-  .card__header{
+  .card__header {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  dialog .floppy__box{
+  dialog .floppy__box {
     margin: 0px;
     width: 100%;
     height: 100%;
   }
 
-  dialog .button__text{
+  dialog .button__text {
     width: 215px;
   }
 
-  dialog .put_diskette{
+  dialog .put_diskette {
     column-gap: 12px;
     line-height: 130%;
   }
@@ -562,19 +559,17 @@ dialog .card__save-button {
     margin-top: 0px;
   }
 
-
   .save {
     margin-top: 53px;
   }
 }
 
 @supports (font-variation-settings: normal) {
-
   .card__header {
     font-variation-settings: "wght" var(--font-settings-big);
   }
 
-  .card_text{
+  .card_text {
     font-variation-settings: "wght" var(--font-settings-medium);
   }
 }

@@ -10,14 +10,11 @@
   --background-color-scheme-dark: rgb(0, 0, 0);
   --accent-color-scheme-dark: rgb(0, 204, 20);
   --favicon-dark-color: rgb(0, 204, 20);
-  --background-image-light: repeating-linear-gradient(#d3d3d3,transparent 2px),
-    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+  --background-image-light: repeating-linear-gradient(#d3d3d3, transparent 4px),
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  --background-image-dark: repeating-linear-gradient(
-      #000,
-      transparent 2px
-    ),
-    repeating-linear-gradient(90deg, #000, transparent 2px),
+  --background-image-dark: repeating-linear-gradient(#000, transparent 4px),
+    repeating-linear-gradient(90deg, #000, transparent 4px),
     linear-gradient(#007f0c 0.01%, #004306);
   --accent-color-span-white: rgb(255, 255, 255);
   --contour-heart-color-black: #000;
