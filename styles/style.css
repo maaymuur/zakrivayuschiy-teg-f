@@ -171,6 +171,11 @@ body {
   opacity: 0.6;
 }
 
+.header_watermark_track{
+  top: 71px;
+}
+
+
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .header_watermark {
     -webkit-text-stroke: 1px #fff;
@@ -414,6 +419,7 @@ dialog .card__save-button {
   margin-top: 3px;
 }
 
+
 .img {
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
   height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
@@ -455,7 +461,7 @@ dialog .card__save-button {
   filter: grayscale(50%);
 }
 
-@media (width <375px) {
+@media (width <376px) {
   .header {
     width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   }

@@ -11,24 +11,21 @@
   --accent-color-scheme-dark: rgb(0, 204, 20);
   --favicon-dark-color: rgb(0, 204, 20);
   --background-image-light: repeating-linear-gradient(
-      transparent 1px,
-      #d3d3d3 2px,
-      transparent 4px
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
     ),
     repeating-linear-gradient(
       90deg,
-      transparent 1px,
-      #d3d3d3 2px,
-      transparent 4px
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
     ),
-    linear-gradient(#e7e7e7, #1a1a1a);
+    linear-gradient(#e7e7e7,  #1a1a1a);
   --background-image-dark: repeating-linear-gradient(
-      transparent 1px,
-      #000 2px,
-      transparent 4px
+      #000 0px 2px,
+      transparent 2px 4px
     ),
-    repeating-linear-gradient(90deg, transparent 1px, #000 2px, transparent 4px),
-    linear-gradient(#007f0c 0.01%, #004306);
+    repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
   --accent-color-span-white: rgb(255, 255, 255);
   --contour-heart-color-black: #000;
   --contour-heart-color-green: rgb(0, 204, 20);
