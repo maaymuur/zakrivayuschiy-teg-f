@@ -11,6 +11,6 @@
   src: url(./Inter-Variable.woff2) format("woff2 supports variations"),
     url(./Inter-Variable.woff2) format("woff2-variations");
   font-display: swap;
-  font-weight: var(--font-settings-medium) var(--font-settings-big);
+  font-weight: var(--font-settings-medium) var(--font-settings-big)
+    var(--inter-text-dark) var(--inter-title-dark);
 }
-

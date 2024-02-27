@@ -171,10 +171,9 @@ body {
   opacity: 0.6;
 }
 
-.header_watermark_track{
+.header_watermark_track {
   top: 57px;
 }
-
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .header_watermark {
@@ -201,7 +200,6 @@ body {
   margin-top: 20px;
 }
 
-
 .article:nth-child(5) .like {
   margin-top: 20px;
 }
@@ -212,9 +210,8 @@ body {
 
 .article:nth-child(8) .card_text {
   line-height: 20px;
-  padding: 29px 25px 4px 26px;;
+  padding: 29px 25px 4px 26px;
 }
-
 
 .card__like-button {
   background-color: transparent;
@@ -238,14 +235,13 @@ body {
   position: relative;
 }
 
-
 .card-button:hover::before,
 .card-button:focus-visible {
   cursor: pointer;
   outline: none;
 }
 
-.card-button:focus{
+.card-button:focus {
   outline: none;
   box-shadow: 2px 2px var(--accent-color);
 }
@@ -427,7 +423,6 @@ dialog .card__save-button {
   line-height: 150%;
 }
 
-
 .save {
   display: flex;
   justify-content: center;
@@ -435,13 +430,11 @@ dialog .card__save-button {
   margin-bottom: 100px;
 }
 
-
 .floppy__box {
   mix-blend-mode: difference;
   color: var(--color-invers);
   margin-top: 3px;
 }
-
 
 .img {
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
@@ -491,7 +484,7 @@ dialog .card__save-button {
 
   .theme-menu__button:disabled::before {
     top: 2px;
-}
+  }
 
   body {
     grid-template-columns:
@@ -513,17 +506,13 @@ dialog .card__save-button {
 
   .card_text {
     padding: 24px 25px 17px 26px;
-}
+  }
 
   .button_text_ok {
     padding: 9px;
   }
   .header_logo {
     margin-block-start: 118px;
-  }
-
-  .like {
-    margin-top: 9px;
   }
 
   .main {
@@ -564,6 +553,7 @@ dialog .card__save-button {
   }
 
   .like {
+    margin-top: 9px;
     margin-right: 29px;
   }
 
@@ -599,7 +589,6 @@ dialog .card__save-button {
     margin-left: 115.5px;
     margin-top: 0px;
   }
-
 }
 
 @supports (font-variation-settings: normal) {
