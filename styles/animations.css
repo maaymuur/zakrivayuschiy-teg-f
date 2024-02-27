@@ -65,13 +65,13 @@
   transition-timing-function: ease;
 }
 
-.card__like-button::before {
+.card-button::before {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before {
+.card-button:hover::before {
   transform: scaleX(1);
 }
 
@@ -134,12 +134,12 @@
   }
 }
 
-.card__save-button::before {
+.card-button::before {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
 
-.card__save-button:hover::before {
+.card-button:hover::before {
   transform: scaleX(1);
 }
