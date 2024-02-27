@@ -171,10 +171,9 @@ body {
   opacity: 0.6;
 }
 
-.header_watermark_track{
+.header_watermark_track {
   top: 57px;
 }
-
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .header_watermark {
@@ -201,7 +200,6 @@ body {
   margin-top: 20px;
 }
 
-
 .article:nth-child(5) .like {
   margin-top: 20px;
 }
@@ -212,7 +210,7 @@ body {
 
 .article:nth-child(8) .card_text {
   line-height: 20px;
-  padding: 29px 25px 4px 26px;;
+  padding: 29px 25px 4px 26px;
 }
 
 .card__like-button {
@@ -443,7 +441,6 @@ dialog .card__save-button {
   margin-top: 3px;
 }
 
-
 .img {
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
   height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
@@ -492,7 +489,7 @@ dialog .card__save-button {
 
   .theme-menu__button:disabled::before {
     top: 2px;
-}
+  }
 
   body {
     grid-template-columns:
@@ -514,7 +511,7 @@ dialog .card__save-button {
 
   .card_text {
     padding: 24px 25px 17px 26px;
-}
+  }
 
   .button_text_ok {
     padding: 9px;
@@ -600,7 +597,6 @@ dialog .card__save-button {
     margin-left: 115.5px;
     margin-top: 0px;
   }
-
 }
 
 @supports (font-variation-settings: normal) {
