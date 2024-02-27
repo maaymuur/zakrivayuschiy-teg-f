@@ -146,7 +146,7 @@ body {
   justify-content: center;
   grid-row: 3;
   grid-column: 2;
-  row-gap: 52px;
+  row-gap: 50px;
 }
 
 .article {
@@ -172,7 +172,7 @@ body {
 }
 
 .header_watermark_track{
-  top: 71px;
+  top: 57px;
 }
 
 
@@ -188,13 +188,31 @@ body {
   display: flex;
   grid-row: 5;
   justify-content: flex-end;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   margin-top: 23px;
   margin-right: 25px;
 }
 
 .article:nth-child(7) .like {
   padding-top: 42px;
+}
+
+.article:nth-child(2) .like {
+  margin-top: 20px;
+}
+
+
+.article:nth-child(5) .like {
+  margin-top: 20px;
+}
+
+.article:nth-child(8) .like {
+  margin-top: 22px;
+}
+
+.article:nth-child(8) .card_text {
+  line-height: 20px;
+  padding: 29px 25px 4px 26px;;
 }
 
 .card__like-button {
@@ -264,8 +282,14 @@ dialog .button__text {
 
 .card_text {
   font-size: 18px;
-  padding: 27px 25px 0px 25px;
+  padding: 27.2px 25px 0px 26px;
   display: grid;
+  line-height: 22px;
+}
+
+.article:nth-child(4) .like {
+  padding-top: 64px;
+  margin-top: 0px;
 }
 
 .card_text:nth-child(2) {
@@ -466,11 +490,15 @@ dialog .card__save-button {
     width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   }
 
+  .theme-menu__button:disabled::before {
+    top: 2px;
+}
+
   body {
     grid-template-columns:
       [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
       [line3] auto;
-    grid-template-rows: [start] 95px [line1]auto [line2] auto;
+    grid-template-rows: [start] 100px [line1]auto [line2] auto;
   }
 
   .put_diskette {
@@ -484,6 +512,10 @@ dialog .card__save-button {
     padding-top: 15px;
   }
 
+  .card_text {
+    padding: 24px 25px 17px 26px;
+}
+
   .button_text_ok {
     padding: 9px;
   }
@@ -492,7 +524,7 @@ dialog .card__save-button {
   }
 
   .like {
-    margin-top: 40px;
+    margin-top: 9px;
   }
 
   .main {
@@ -500,32 +532,36 @@ dialog .card__save-button {
   }
 
   .article:nth-child(2) .like {
-    padding-top: 40px;
+    margin-top: 48px;
+  }
+
+  .article:nth-child(3) .like {
+    margin-top: 8px;
   }
 
   .article:nth-child(4) .like {
     padding-top: 0px;
-    margin-top: 19px;
+    margin-top: 70px;
   }
 
   .article:nth-child(5) .like {
     padding-top: 0px;
-    margin-top: 35px;
+    margin-top: 3px;
   }
 
   .article:nth-child(6) .like {
     padding-top: 0px;
-    margin-top: 43px;
+    margin-top: 9px;
   }
 
   .article:nth-child(7) .like {
     padding-top: 0px;
-    margin-top: 81px;
+    margin-top: 50px;
   }
 
   .article:nth-child(8) .like {
     padding-top: 0px;
-    margin-top: 34px;
+    margin-top: 46px;
   }
 
   .like {
@@ -565,9 +601,6 @@ dialog .card__save-button {
     margin-top: 0px;
   }
 
-  .save {
-    margin-top: 53px;
-  }
 }
 
 @supports (font-variation-settings: normal) {
