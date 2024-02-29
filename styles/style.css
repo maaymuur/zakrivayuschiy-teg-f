@@ -193,7 +193,6 @@ body {
   margin-right: 25px;
 }
 
-
 .article:nth-child(8) .card_text {
   line-height: 20.8px;
   padding: 30px 25px -2px 26px;
@@ -330,7 +329,6 @@ dialog .button__text {
   margin-top: 24px;
 }
 
-
 .card_text:nth-child(2) {
   grid-row: 4;
 }
@@ -366,8 +364,6 @@ dialog .button__text {
 .article:nth-child(8) {
   grid-row: 8;
 }
-
-
 
 .save-memories {
   background-color: var(--background-color);
@@ -593,7 +589,7 @@ dialog .card__save-button {
 
   .theme-dark .article:nth-child(1) .like {
     margin-top: 1px;
-}
+  }
 
   .theme-dark .article:nth-child(8) .card_text {
     line-height: 21px;
