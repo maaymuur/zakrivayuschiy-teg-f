@@ -172,7 +172,8 @@ body {
 }
 
 .header_watermark_track {
-  top: 57px;
+  top: 76px;
+  right: 14px;
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
@@ -185,32 +186,17 @@ body {
 
 .like {
   display: flex;
-  grid-row: 5;
+  grid-row: 6;
   justify-content: flex-end;
   margin-bottom: 22px;
   margin-top: 23px;
   margin-right: 25px;
 }
 
-.article:nth-child(7) .like {
-  padding-top: 42px;
-}
-
-.article:nth-child(2) .like {
-  margin-top: 20px;
-}
-
-.article:nth-child(5) .like {
-  margin-top: 20px;
-}
-
-.article:nth-child(8) .like {
-  margin-top: 22px;
-}
 
 .article:nth-child(8) .card_text {
-  line-height: 20px;
-  padding: 29px 25px 4px 26px;
+  line-height: 20.8px;
+  padding: 30px 25px -2px 26px;
 }
 
 .card__like-button {
@@ -228,7 +214,7 @@ body {
   grid-template-columns: [start] 21px [line2] auto;
   column-gap: 7px;
   padding-inline: 22px;
-  padding-block: 10px;
+  padding-block: 11px;
   margin: 0 auto;
   font-size: 14px;
   border: 2px solid var(--accent-color);
@@ -302,7 +288,7 @@ dialog .button__text {
 
 .card_header {
   font-size: 18px;
-  padding: 5px 24px 5px 10px;
+  padding: 5px 24px 4px 10px;
   display: grid;
   grid-row: 1;
   font-family: var(--basic-font);
@@ -310,15 +296,40 @@ dialog .button__text {
 
 .card_text {
   font-size: 18px;
-  padding: 27.2px 25px 0px 26px;
+  padding: 29px 25px 0px 26px;
   display: grid;
-  line-height: 22px;
+  line-height: 21.5px;
 }
 
-.article:nth-child(4) .like {
-  padding-top: 50px;
+.article:nth-child(3) .like {
+  padding-top: 21px;
   margin-top: 0px;
 }
+.article:nth-child(4) .like {
+  padding-top: 64px;
+  margin-top: 0px;
+}
+
+.article:nth-child(5) .like {
+  padding-top: 0px;
+  margin-top: 19px;
+}
+
+.article:nth-child(6) .like {
+  padding-top: 27px;
+  margin-top: 17px;
+}
+
+.article:nth-child(7) .like {
+  padding-top: 0px;
+  margin-top: 65px;
+}
+
+.article:nth-child(8) .like {
+  padding-top: 0px;
+  margin-top: 24px;
+}
+
 
 .card_text:nth-child(2) {
   grid-row: 4;
@@ -355,6 +366,8 @@ dialog .button__text {
 .article:nth-child(8) {
   grid-row: 8;
 }
+
+
 
 .save-memories {
   background-color: var(--background-color);
@@ -500,12 +513,18 @@ dialog .card__save-button {
   .card__save-button {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: [start] 30px [line1] 14px;
-    padding-block: 20px;
+    padding-block: 22px;
     padding-top: 15px;
   }
 
   .card_text {
-    padding: 24px 25px 17px 26px;
+    line-height: 21.5px;
+    padding: 24px 18px 22px 28px;
+  }
+
+  .article:nth-child(8) .card_text {
+    line-height: 21px;
+    padding: 25px 28px 3px 26px;
   }
 
   .button_text_ok {
@@ -519,42 +538,95 @@ dialog .card__save-button {
     row-gap: 52px;
   }
 
+  .article:nth-child(1) .like {
+    margin-top: 3px;
+  }
+
   .article:nth-child(2) .like {
-    margin-top: 48px;
+    margin-top: 44px;
   }
 
   .article:nth-child(3) .like {
-    margin-top: 8px;
+    margin-top: 3px;
+    padding-top: 0px;
   }
 
   .article:nth-child(4) .like {
     padding-top: 0px;
-    margin-top: 70px;
+    margin-top: 66px;
   }
 
   .article:nth-child(5) .like {
     padding-top: 0px;
-    margin-top: 3px;
+    margin-top: 0px;
   }
 
   .article:nth-child(6) .like {
     padding-top: 0px;
-    margin-top: 9px;
+    margin-top: 68px;
   }
 
   .article:nth-child(7) .like {
     padding-top: 0px;
-    margin-top: 50px;
+    margin-top: 45px;
   }
 
   .article:nth-child(8) .like {
     padding-top: 0px;
-    margin-top: 46px;
+    margin-top: 22px;
   }
 
   .like {
     margin-top: 9px;
     margin-right: 29px;
+  }
+
+  .theme-dark .like {
+    margin-top: 1px;
+    margin-right: 29px;
+  }
+
+  .theme-dark .card_text {
+    line-height: 21px;
+    padding: 24px 23px 25px 26px;
+  }
+
+  .theme-dark .article:nth-child(1) .like {
+    margin-top: 1px;
+}
+
+  .theme-dark .article:nth-child(8) .card_text {
+    line-height: 21px;
+    padding: 26px 26px 0px 26px;
+  }
+
+  .theme-dark .article:nth-child(8) .like {
+    padding-top: 22px;
+    margin-top: 3px;
+  }
+
+  .theme-dark .article:nth-child(2) .like {
+    margin-top: 44px;
+  }
+
+  .theme-dark .article:nth-child(3) .like {
+    margin-top: 0px;
+  }
+
+  .theme-dark .article:nth-child(4) .like {
+    margin-top: 65px;
+  }
+
+  .theme-dark .article:nth-child(5) .like {
+    margin-top: 0px;
+  }
+
+  .theme-dark .article:nth-child(6) .like {
+    margin-top: 64px;
+  }
+
+  .theme-dark .article:nth-child(7) .like {
+    margin-top: 44px;
   }
 
   .card__icon-button {
