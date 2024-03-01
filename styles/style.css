@@ -415,7 +415,7 @@ dialog .card__save-button {
   filter: grayscale(50%);
 }
 
-@media (width <= 376px) {
+@media (width < 376px) {
   .header {
     width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   }
