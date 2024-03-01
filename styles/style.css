@@ -86,18 +86,6 @@ body {
   margin-block-end: 15px;
 }
 
-.theme-menu__item:nth-child(1) {
-  grid-row: 1;
-}
-
-.theme-menu__item:nth-child(2) {
-  grid-row: 2;
-}
-
-.theme-menu__item:nth-child(3) {
-  grid-row: 3;
-}
-
 .theme-menu__button {
   margin-block-end: 10px;
   background-color: transparent;
@@ -176,6 +164,16 @@ body {
   right: 14px;
 }
 
+.theme-dark .header_watermark_track {
+  top: 58px;
+  right: 25px;
+}
+
+.header_watermark_track {
+  top: 58px;
+  right: 25px;
+}
+
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .header_watermark {
     -webkit-text-stroke: 1px #fff;
@@ -189,13 +187,8 @@ body {
   grid-row: 6;
   justify-content: flex-end;
   margin-bottom: 22px;
-  margin-top: 22px;
+  margin-top: 26px;
   margin-right: 25px;
-}
-
-.article:nth-child(8) .card_text {
-  line-height: 20.8px;
-  padding: 30px 25px -2px 26px;
 }
 
 .card__like-button {
@@ -295,74 +288,9 @@ dialog .button__text {
 
 .card_text {
   font-size: 18px;
-  padding: 29px 25px 0px 26px;
+  padding: 26px 25px 0px 25px;
   display: grid;
-  line-height: 21.5px;
-}
-
-.article:nth-child(3) .like {
-  padding-top: 21px;
-  margin-top: 0px;
-}
-.article:nth-child(4) .like {
-  padding-top: 64px;
-  margin-top: 0px;
-}
-
-.article:nth-child(5) .like {
-  padding-top: 0px;
-  margin-top: 19px;
-}
-
-.article:nth-child(6) .like {
-  padding-top: 27px;
-  margin-top: 17px;
-}
-
-.article:nth-child(7) .like {
-  padding-top: 0px;
-  margin-top: 65px;
-}
-
-.article:nth-child(8) .like {
-  padding-top: 0px;
-  margin-top: 24px;
-}
-
-.card_text:nth-child(2) {
-  grid-row: 4;
-}
-
-.article:nth-child(1) {
-  grid-row: 1;
-}
-
-.article:nth-child(2) {
-  grid-row: 2;
-}
-
-.article:nth-child(3) {
-  grid-row: 3;
-}
-
-.article:nth-child(4) {
-  grid-row: 4;
-}
-
-.article:nth-child(5) {
-  grid-row: 5;
-}
-
-.article:nth-child(6) {
-  grid-row: 6;
-}
-
-.article:nth-child(7) {
-  grid-row: 7;
-}
-
-.article:nth-child(8) {
-  grid-row: 8;
+  line-height: 21px;
 }
 
 .save-memories {
@@ -447,7 +375,7 @@ dialog .card__save-button {
 
 .img {
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
-  height: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  height: 700px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -486,7 +414,7 @@ dialog .card__save-button {
   filter: grayscale(50%);
 }
 
-@media (width <376px) {
+@media (width < 376px) {
   .header {
     width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   }
@@ -502,6 +430,13 @@ dialog .card__save-button {
     grid-template-rows: [start] 100px [line1]auto [line2] auto;
   }
 
+  .article {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    border: 2px solid var(--accent-color);
+  }
+
   .put_diskette {
     grid-template-columns: [ start] 39px [ line2] 198px;
   }
@@ -514,13 +449,15 @@ dialog .card__save-button {
   }
 
   .card_text {
-    line-height: 21.5px;
-    padding: 24px 18px 22px 28px;
+    line-height: 21px;
+    padding: 25.5px 22px 23px 27px;
+    word-spacing: 0.01rem;
   }
 
-  .article:nth-child(8) .card_text {
+  .article:nth-child(2) .card_text {
     line-height: 21px;
-    padding: 25px 28px 3px 26px;
+    padding: 25.5px 22px 2px 27px;
+    word-spacing: 0.01rem;
   }
 
   .button_text_ok {
@@ -531,50 +468,25 @@ dialog .card__save-button {
   }
 
   .main {
-    row-gap: 52px;
+    row-gap: 50px;
   }
 
-  .article:nth-child(1) .like {
-    margin-top: 3px;
-  }
-
-  .article:nth-child(2) .like {
-    margin-top: 44px;
-  }
-
-  .article:nth-child(3) .like {
-    margin-top: 3px;
-    padding-top: 0px;
-  }
-
-  .article:nth-child(4) .like {
-    padding-top: 0px;
-    margin-top: 66px;
-  }
-
-  .article:nth-child(5) .like {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
-
-  .article:nth-child(6) .like {
-    padding-top: 0px;
-    margin-top: 68px;
-  }
-
-  .article:nth-child(7) .like {
-    padding-top: 0px;
-    margin-top: 45px;
-  }
-
-  .article:nth-child(8) .like {
-    padding-top: 0px;
-    margin-top: 22px;
+  .img {
+    height: 375px;
+    border-bottom: 4px solid var(--accent-color);
   }
 
   .like {
-    margin-top: 9px;
-    margin-right: 29px;
+    display: flex;
+    grid-row: 6;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+    margin-top: 4px;
+    margin-right: 27px;
+  }
+
+  .card__like-button {
+    width: 130px;
   }
 
   .theme-dark .like {
@@ -587,46 +499,8 @@ dialog .card__save-button {
     padding: 24px 23px 25px 26px;
   }
 
-  .theme-dark .article:nth-child(1) .like {
-    margin-top: 1px;
-  }
-
-  .theme-dark .article:nth-child(8) .card_text {
-    line-height: 21px;
-    padding: 26px 26px 0px 26px;
-  }
-
-  .theme-dark .article:nth-child(8) .like {
-    padding-top: 22px;
-    margin-top: 3px;
-  }
-
-  .theme-dark .article:nth-child(2) .like {
-    margin-top: 44px;
-  }
-
-  .theme-dark .article:nth-child(3) .like {
-    margin-top: 0px;
-  }
-
-  .theme-dark .article:nth-child(4) .like {
-    margin-top: 65px;
-  }
-
-  .theme-dark .article:nth-child(5) .like {
-    margin-top: 0px;
-  }
-
-  .theme-dark .article:nth-child(6) .like {
-    margin-top: 64px;
-  }
-
-  .theme-dark .article:nth-child(7) .like {
-    margin-top: 44px;
-  }
-
   .card__icon-button {
-    padding: 0px;
+    margin-right: 0px;
   }
 
   .card__header {
