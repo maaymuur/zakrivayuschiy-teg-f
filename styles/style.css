@@ -131,15 +131,17 @@ body {
 
 .main {
   display: grid;
-  justify-content: center;
   grid-row: 3;
   grid-column: 2;
-  row-gap: 50px;
+  row-gap: 50.5px;
 }
 
 .article {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(
+    1,
+    clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem)
+  );
   grid-template-rows: repeat(5, auto);
   background-color: var(--background-card);
   border: 2px solid var(--border-card);
@@ -164,11 +166,6 @@ body {
   right: 14px;
 }
 
-.theme-dark .header_watermark_track {
-  top: 58px;
-  right: 25px;
-}
-
 .header_watermark_track {
   top: 58px;
   right: 25px;
@@ -187,7 +184,7 @@ body {
   grid-row: 6;
   justify-content: flex-end;
   margin-bottom: 22px;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-right: 25px;
 }
 
@@ -278,19 +275,28 @@ dialog .button__text {
   justify-items: center;
 }
 
+.card_abstracts {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin: 25px 25.5px auto 25px;
+}
+
 .card_header {
   font-size: 18px;
-  padding: 5px 24px 4px 10px;
-  display: grid;
   grid-row: 1;
   font-family: var(--basic-font);
+  padding-inline: 10px;
+  padding-block-start: 5px;
+  line-height: 22px;
+  padding-bottom: 4px;
 }
 
 .card_text {
   font-size: 18px;
-  padding: 26px 25px 0px 25px;
   display: grid;
   line-height: 21px;
+  text-align: left;
 }
 
 .save-memories {
@@ -375,9 +381,8 @@ dialog .card__save-button {
 
 .img {
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
-  height: 700px;
+  height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   display: flex;
-  justify-content: center;
   position: relative;
   z-index: 0;
   border-top: 2px solid var(--accent-color);
@@ -432,7 +437,7 @@ dialog .card__save-button {
 
   .article {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: 371px;
     grid-template-rows: repeat(5, auto);
     border: 2px solid var(--accent-color);
   }
@@ -448,16 +453,16 @@ dialog .card__save-button {
     padding-top: 15px;
   }
 
-  .card_text {
-    line-height: 21px;
-    padding: 25.5px 22px 23px 27px;
-    word-spacing: 0.01rem;
+  .card_abstracts {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin: 25.5px 25px auto 25px;
   }
 
-  .article:nth-child(2) .card_text {
+  .card_text {
+    padding: 0px;
     line-height: 21px;
-    padding: 25.5px 22px 2px 27px;
-    word-spacing: 0.01rem;
   }
 
   .button_text_ok {
@@ -472,31 +477,33 @@ dialog .card__save-button {
   }
 
   .img {
-    height: 375px;
+    width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    object-fit: cover;
     border-bottom: 4px solid var(--accent-color);
+  }
+
+  .header_watermark_track {
+    top: 76px;
+    right: 14px;
+  }
+
+  .header_watermark {
+    right: 11px;
   }
 
   .like {
     display: flex;
     grid-row: 6;
     justify-content: flex-end;
-    margin-bottom: 22px;
-    margin-top: 4px;
-    margin-right: 27px;
+    margin-bottom: 21px;
+    margin-top: 26px;
+    padding-top: 0px;
+    margin-right: 23.5px;
   }
 
   .card__like-button {
     width: 130px;
-  }
-
-  .theme-dark .like {
-    margin-top: 1px;
-    margin-right: 29px;
-  }
-
-  .theme-dark .card_text {
-    line-height: 21px;
-    padding: 24px 23px 25px 26px;
   }
 
   .card__icon-button {
