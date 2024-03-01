@@ -30,7 +30,7 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns:
-    [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
+    [start] auto [line2] clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem)
     [line3] auto;
   grid-template-rows: [start] 100px [line1]auto [line2] auto;
 }
@@ -39,7 +39,7 @@ body {
   display: grid;
   grid-column: 2;
   grid-row: 2;
-  max-width: 700px;
+  max-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   background-color: var(--background-card);
   border: 2px solid var(--border-card);
   font-family: var(--accent-font), "Arial", sans-serif;
@@ -134,13 +134,14 @@ body {
   grid-row: 3;
   grid-column: 2;
   row-gap: 50.5px;
+  justify-content: center;
 }
 
 .article {
   display: grid;
   grid-template-columns: repeat(
     1,
-    clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem)
+    clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem)
   );
   grid-template-rows: repeat(5, auto);
   background-color: var(--background-card);
@@ -202,7 +203,7 @@ body {
   display: grid;
   grid-template-columns: [start] 21px [line2] auto;
   column-gap: 7px;
-  padding-inline: 22px;
+  padding-inline: 20px;
   padding-block: 11px;
   margin: 0 auto;
   font-size: 14px;
@@ -380,7 +381,7 @@ dialog .card__save-button {
 }
 
 .img {
-  width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
+  width: clamp(23.25rem, 16.12rem + 30.423vw, 43.5rem);
   height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   display: flex;
   position: relative;
@@ -419,9 +420,9 @@ dialog .card__save-button {
   filter: grayscale(50%);
 }
 
-@media (width < 376px) {
+@media (width <= 376px) {
   .header {
-    width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   }
 
   .theme-menu__button:disabled::before {
@@ -429,15 +430,13 @@ dialog .card__save-button {
   }
 
   body {
-    grid-template-columns:
-      [start] auto [line2]clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem)
-      [line3] auto;
+    grid-template-columns: [start] auto [line2]auto, [line3] auto;
     grid-template-rows: [start] 100px [line1]auto [line2] auto;
   }
 
   .article {
     display: grid;
-    grid-template-columns: 371px;
+    width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
     grid-template-rows: repeat(5, auto);
     border: 2px solid var(--accent-color);
   }
@@ -474,11 +473,12 @@ dialog .card__save-button {
 
   .main {
     row-gap: 50px;
+    width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   }
 
   .img {
-    width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
-    height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    width: clamp(23.25rem, 16.032rem + 30.798vw, 43.75rem);
+    height: 375px;
     object-fit: cover;
     border-bottom: 4px solid var(--accent-color);
   }
