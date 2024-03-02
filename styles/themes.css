@@ -33,36 +33,6 @@
     --font-settings-big: var(--inter-title-dark);
     --font-settings-medium: var(--inter-text-dark);
   }
-
-  .header_watermark_track {
-    top: 58px;
-    right: 25px;
-  }
-
-  @media (width < 376px) {
-    .header_watermark {
-      right: 14px;
-    }
-
-    .like {
-      margin-top: 26px;
-      margin-right: 24px;
-    }
-
-    .header_watermark_track {
-      top: 76px;
-      right: 14px;
-    }
-
-    .card_text {
-      line-height: 21px;
-      padding: 0px;
-    }
-
-    .card_abstracts {
-      margin: 25.5px 25px auto 25px;
-    }
-  }
 }
 
 :root.theme-light {
